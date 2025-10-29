@@ -1,0 +1,26 @@
+{
+    "Nav": {
+        "Es": "Español",
+        "En": "Ingles",
+        "Experiencia": "Experiencia",
+        "MiStack": "Mi Stack",
+        "SobreMi": "Sobre Mi",
+        "Contacto": "Contacto"
+    },
+    "Hero": {
+        "Ubicacion": "Ubicado en Argentina"
+    },
+    "Menu": {
+        "Redes": "Redes",
+        "Inicio": "Inicio",
+        "InicioLabel": "Ir al Inicio",
+        "Experiencia": "Experiencia",
+        "ExperienciaLabel": "Ir a la seccion Experiencia",
+        "MiStack": "Mi Stack",
+        "MiStackLabel": "Ir a la seccion Mi Stack",
+        "SobreMi": "Sobre Mi",
+        "SobreMiLabel": "Ir a la seccion Sobre Mi",
+        "Contacto": "Contacto",
+        "ContactoLabel": "Ir a la seccion Contacto"
+    }
+}

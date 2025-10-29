@@ -1,0 +1,26 @@
+{
+    "Nav": {
+        "Es": "Spanish",
+        "En": "English",
+        "Experiencia": "Experience",
+        "MiStack": "My Stack",
+        "SobreMi": "About",
+        "Contacto": "Contact"
+    },
+    "Hero": {
+        "Ubicacion": "Located in Argentina"
+    },
+    "Menu": {
+        "Redes": "Socials",
+        "Inicio": "Home",
+        "InicioLabel": "Go to Home Page",
+        "Experiencia": "Experience",
+        "ExperienciaLabel": "Go to Experience Section",
+        "MiStack": "My Stack",
+        "MiStackLabel": "Go to My Stack Section",
+        "SobreMi": "About",
+        "SobreMiLabel": "Go to About Section",
+        "Contacto": "Contact",
+        "ContactoLabel": "Go to Contact Section"
+    }
+}
