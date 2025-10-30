@@ -9,13 +9,13 @@ const Hero = () => {
     return (
         <div id="hero" className="relative w-full min-h-screen max-h-screen bg-gray-background overflow-x-hidden">
             <div className="w-full h-screen flex place-items-center place-content-center">
-                <div className="text-white flex flex-col place-items-start -translate-x-20 lg:-translate-x-full -translate-y-24 lg:-translate-y-16 gap-8">
-                    <span className="text-2xl lg:text-4xl">
+                <div className="text-white flex flex-col place-items-start -translate-x-[clamp(80px,20vw,280px)] lg:-translate-x-full -translate-y-24 lg:-translate-y-16 gap-8">
+                    <span className="text-[clamp(1.5rem,6vw,2rem)] lg:text-[clamp(2.25rem,2.6vw,4rem)]">
                         FullStack <br /> Developer
                     </span>
 
                     <div className="flex place-items-center place-content-center gap-4">
-                        <span className="text-base max-w-24">
+                        <span className="text-base lg:text-[clamp(1rem,1.3vw,1.5rem)] max-w-24 lg:max-w-[clamp(6rem,8vw,9.6rem)]">
                             {t("Ubicacion")}
                         </span>
 
@@ -34,7 +34,7 @@ const Hero = () => {
                 </div>
 
                 <Image
-                    className="absolute bottom-0 lg:right-[42%] translate-x-[12%] lg:translate-x-[58%] max-w-[830px] max-h-[calc(100vh-50px)] lg:h-screen lg:w-auto object-contain"
+                    className="absolute bottom-0 lg:right-[42%] translate-x-[12%] lg:translate-x-[58%] max-w-[clamp(830px,100vw,1800px)] max-h-[calc(100vh-50px)] lg:h-screen lg:w-auto object-contain lg:object-cover"
                     src="/Hero2.png"
                     width={2278}
                     height={2278}
