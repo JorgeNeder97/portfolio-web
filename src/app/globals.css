@@ -23,6 +23,10 @@
         @apply after:block after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 group-hover:after:scale-x-100
     }
 
+    .iconTech {
+        @apply hover:cursor-pointer
+    }
+
 }
 
 html,

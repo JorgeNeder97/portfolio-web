@@ -1,5 +1,6 @@
 import HeroClient from "@/components/Hero/HeroClient";
 import Nav from "@/components/Nav/Nav";
+import Stack from "@/components/Stack/Stack";
 
 const HomePage = () => {
     return (
@@ -8,10 +9,8 @@ const HomePage = () => {
                 <Nav />
                 <HeroClient />
             </header>
-            <main>
-                <div className="min-h-200 bg-black-background">
-
-                </div>
+            <main className="w-full min-h-screen bg-black-background flex flex-col place-items-center">
+                <Stack />
             </main>
             <footer>
 

@@ -22,5 +22,10 @@
         "SobreMiLabel": "Go to About Section",
         "Contacto": "Contact",
         "ContactoLabel": "Go to Contact Section"
+    },
+    "Stack": {
+        "TituloUno": "Tech Stack",
+        "TituloDos": "Technologies I Specialize In",
+        "TituloTres": "Tools and Other Technologies I Work With"
     }
 }

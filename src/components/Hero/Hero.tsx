@@ -7,7 +7,7 @@ const Hero = () => {
     const t = useTranslations("Hero");
 
     return (
-        <div id="hero" className="relative w-full min-h-screen max-h-screen bg-gray-background overflow-x-hidden">
+        <section id="hero" className="relative w-full min-h-screen max-h-screen bg-gray-background overflow-x-hidden">
             <div className="w-full h-screen flex place-items-center place-content-center">
                 <div className="text-white flex flex-col place-items-start -translate-x-[clamp(80px,20vw,280px)] lg:-translate-x-full -translate-y-24 lg:-translate-y-16 gap-8">
                     <span className="text-[clamp(1.5rem,6vw,2rem)] lg:text-[clamp(2.25rem,2.6vw,4rem)]">
@@ -50,7 +50,7 @@ const Hero = () => {
                     className="custom-scroll-text font-normal text-9xl"
                 />
             </div>
-        </div>
+        </section>
     );
 };
 

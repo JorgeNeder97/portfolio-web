@@ -22,5 +22,10 @@
         "SobreMiLabel": "Ir a la seccion Sobre Mi",
         "Contacto": "Contacto",
         "ContactoLabel": "Ir a la seccion Contacto"
+    },
+    "Stack": {
+        "TituloUno": "Stack Tecnológico",
+        "TituloDos": "Tecnologías en las que me especializo",
+        "TituloTres": "Herramientas y otras tecnologías con las que trabajo"
     }
 }
