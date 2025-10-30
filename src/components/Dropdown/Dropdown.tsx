@@ -14,7 +14,7 @@ const Dropdown = () => {
 
     return (
         <div 
-            className="d-dropdown d-dropdown-bottom d-dropdown-center w-[83px] select-none z-50" 
+            className="d-dropdown d-dropdown-bottom d-dropdown-center w-[83px] pb-1.5 select-none z-50" 
             onClick={() => setOpen(prev => !prev)} 
         >
             <div 

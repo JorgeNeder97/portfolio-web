@@ -9,7 +9,7 @@ const Nav = () => {
     const t = useTranslations("Nav");
 
     return (
-        <nav className="absolute top-4 z-50 w-full px-8 text-base flex place-items-center place-content-between">
+        <nav className="absolute top-7 lg:top-4 z-30 lg:w-full px-8 text-base flex place-items-center place-content-between">
             <Dropdown />
             <ul className="hidden lg:flex place-items-center gap-5">
                 <li className="nav-li group"><Link href="#exp" className="nav-link">{t("Experiencia")}</Link></li>

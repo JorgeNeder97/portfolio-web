@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Poppins } from "next/font/google";
 import StaggeredMenuClient from "@/components/Menu/StraggeredMenuClient";
+import SmoothScroll from "@/components/SmoothScroll/SmoothScroll";
 
 const poppins = Poppins({
     weight: ["200", "300", "400", "500", "600", "700"],
@@ -28,7 +29,9 @@ export default async function LocaleLayout({
             <body className={`${poppins.className} antialiased overflow-x-hidden relative`}>
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     <StaggeredMenuClient isFixed={true} />
-                    {children}
+                    <SmoothScroll>
+                        {children}
+                    </SmoothScroll>
                 </NextIntlClientProvider>
             </body>
         </html>

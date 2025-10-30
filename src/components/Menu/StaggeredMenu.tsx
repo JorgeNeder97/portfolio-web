@@ -162,7 +162,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
             ? (layerStates.length - 1) * 0.07
             : 0;
         const panelInsertTime = lastTime + (layerStates.length ? 0.08 : 0);
-        const panelDuration = 0.65;
+        const panelDuration = 1.5;
 
         tl.fromTo(
             panel,
@@ -217,7 +217,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                     {
                         y: 0,
                         opacity: 1,
-                        duration: 0.55,
+                        duration: 0.35,
                         ease: "power3.out",
                         stagger: { each: 0.08, from: "start" },
                         onComplete: () => {
@@ -263,7 +263,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 
         closeTweenRef.current = gsap.to(all, {
             xPercent: offscreen,
-            duration: 0.32,
+            duration: 0.45,
             ease: "power3.in",
             overwrite: "auto",
             onComplete: () => {
@@ -472,7 +472,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
             <aside
                 id="staggered-menu-panel"
                 ref={panelRef}
-                className="staggered-menu-panel absolute top-0 right-0 h-full bg-white flex flex-col p-[6em_2em_2em_2em] overflow-y-auto z-10 backdrop-blur-md"
+                className="staggered-menu-panel w-full sm:w-[clamp(260px,38vw,500px)] absolute top-0 right-0 h-full bg-white flex flex-col p-[6em_2em_2em_2em] overflow-y-auto z-10 backdrop-blur-md"
                 style={{ WebkitBackdropFilter: "blur(12px)" }}
                 aria-hidden={!open}
             >
@@ -485,16 +485,16 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                         {items && items.length ? (
                             items.map((it, idx) => (
                                 <li
-                                    className="sm-panel-itemWrap relative overflow-hidden leading-none"
+                                    className="sm-panel-itemWrap relative overflow-hidden leading-none pr-[1.4rem]"
                                     key={it.label + idx}
                                 >
                                     <a
-                                        className="sm-panel-item relative text-black font-semibold text-[4rem] cursor-pointer leading-none tracking-[-2px] uppercase transition-[background,color] duration-150 ease-linear inline-block no-underline pr-[1.4em]"
+                                        className="sm-panel-item relative text-black font-semibold text-[clamp(1rem,13vw,4rem)] sm:text-[2rem] md:text-[2.5rem] lg:text-[clamp(3rem,5vw,4rem)] cursor-pointer leading-none tracking-[-2px] uppercase transition-[background,color] duration-150 ease-linear inline-block no-underline "
                                         href={it.link}
                                         aria-label={it.ariaLabel}
                                         data-index={idx + 1}
                                     >
-                                        <span className="sm-panel-itemLabel inline-block origin-[50%_100%] will-change-transform hover:text-gray-background transition-colors duration-200 ease-in-out">
+                                        <span className="sm-panel-itemLabel inline-block origin-[50%_100%] will-change-transform hover:text-gray-text transition-colors duration-200 ease-in-out">
                                             {it.label}
                                         </span>
                                     </a>
