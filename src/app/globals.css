@@ -24,7 +24,8 @@
     }
 
     .iconTech {
-        @apply hover:cursor-pointer
+        @apply lg:w-20 lg:h-20
+        hover:cursor-pointer
     }
 
 }

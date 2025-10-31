@@ -7,6 +7,7 @@ const Python = (props: React.SVGProps<SVGSVGElement>) => {
         >
             <linearGradient
                 gradientUnits="userSpaceOnUse"
+                id="python-original-a"
                 x1={70.252}
                 y1={1237.476}
                 x2={170.659}
@@ -18,6 +19,7 @@ const Python = (props: React.SVGProps<SVGSVGElement>) => {
             </linearGradient>
             <linearGradient
                 gradientUnits="userSpaceOnUse"
+                id="python-original-b"
                 x1={209.474}
                 y1={1098.811}
                 x2={173.62}
@@ -38,6 +40,7 @@ const Python = (props: React.SVGProps<SVGSVGElement>) => {
                 transform="translate(0 10.26)"
             />
             <radialGradient
+                id="python-original-c"
                 cx={1825.678}
                 cy={444.45}
                 r={26.743}

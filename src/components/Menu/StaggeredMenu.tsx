@@ -416,9 +416,9 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
     const t = useTranslations("Menu");
 
     return (
-        <div className="fixed top-0 h-screen w-screen z-20">
+        <div className="fixed top-0 h-screen right-0">
             <header
-                className="absolute top-0 right-0 w-full flex items-center justify-end p-[2em] bg-transparent pointer-events-none z-20"
+                className="absolute top-0 right-0 flex items-center justify-end p-[2em] bg-transparent pointer-events-none z-20"
                 aria-label="Main navigation header"
             >
                 <button

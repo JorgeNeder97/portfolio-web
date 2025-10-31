@@ -5,7 +5,7 @@ const GitHub = (props: React.SVGProps<SVGSVGElement>) => {
             viewBox="0 0 128 128"
             {...props}
         >
-            <g fill="#181616">
+            <g fill="#ececec">
                 <path
                     fillRule="evenodd"
                     clipRule="evenodd"

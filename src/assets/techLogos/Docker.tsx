@@ -1,6 +1,6 @@
-const Docker = ({ width, height } : { width:string; height:string}) => {
+const Docker = (props: React.SVGProps<SVGSVGElement>) => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 ${width} ${height}`}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" {...props}>
             <path
                 fillRule="evenodd"
                 clipRule="evenodd"

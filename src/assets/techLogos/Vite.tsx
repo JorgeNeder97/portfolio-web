@@ -7,6 +7,7 @@ const Vite = (props: React.SVGProps<SVGSVGElement>) => {
         >
             <defs>
                 <linearGradient
+                    id="a"
                     x1={6}
                     x2={235}
                     y1={33}
@@ -18,6 +19,7 @@ const Vite = (props: React.SVGProps<SVGSVGElement>) => {
                     <stop offset={1} stopColor="#bd34fe" />
                 </linearGradient>
                 <linearGradient
+                    id="b"
                     x1={194.651}
                     x2={236.076}
                     y1={8.818}
