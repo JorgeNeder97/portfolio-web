@@ -416,15 +416,15 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
     const t = useTranslations("Menu");
 
     return (
-        <div className="fixed top-0 h-screen right-0">
+        <div className="fixed top-0 h-screen right-0 z-40">
             <header
-                className="absolute top-0 right-0 flex items-center justify-end p-[2em] bg-transparent pointer-events-none z-20"
+                className="absolute top-0 right-0 z-50 flex items-center justify-end p-[2em] bg-transparent pointer-events-none"
                 aria-label="Main navigation header"
             >
                 <button
                     ref={toggleBtnRef}
-                    className={`sm-toggle relative inline-flex items-center gap-[0.3rem] bg-transparent border-0 cursor-pointer font-medium leading-none overflow-visible pointer-events-auto ${
-                        open ? "text-black" : "text-white"
+                    className={`sm-toggle relative inline-flex items-center gap-[0.3rem] border-0 cursor-pointer font-medium leading-none overflow-visible pointer-events-auto ${
+                        open ? "text-white" : "text-white"
                     }`}
                     aria-label={open ? "Close menu" : "Open menu"}
                     aria-expanded={open}
@@ -472,7 +472,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
             <aside
                 id="staggered-menu-panel"
                 ref={panelRef}
-                className="staggered-menu-panel w-full sm:w-[clamp(260px,38vw,500px)] absolute top-0 right-0 h-full bg-white flex flex-col p-[6em_2em_2em_2em] overflow-y-auto z-10 backdrop-blur-md"
+                className="staggered-menu-panel w-screen sm:w-[clamp(260px,38vw,500px)] absolute top-0 right-0 h-full bg-white flex flex-col p-[6em_2em_2em_2em] overflow-y-auto z-40 backdrop-blur-md"
                 style={{ WebkitBackdropFilter: "blur(12px)" }}
                 aria-hidden={!open}
             >

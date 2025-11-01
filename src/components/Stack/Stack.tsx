@@ -2,6 +2,8 @@
 import { Next, ReactLogo, TypeScript, TailwindCSS, PostgresSQL, Prisma3, Git, GitHub, VisualStudioCode, 
     Trello, Bash, Postman, Linux, NGINX, HTML5, CSS3, JavaScript, Vite, Redux, Node, Express, 
     Python, DjangoREST, MySQL, SQLite, Sequelize, Redis, Docker } from "@/assets/techLogos";
+import Figma from "@/assets/techLogos/Figma";
+import Vercel from "@/assets/techLogos/Vercel";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
@@ -11,61 +13,63 @@ const Stack = () => {
     const t = useTranslations("Stack");
 
     return (
-        <section id="stack" className="w-full min-h-screen py-20 text-white flex flex-col place-items-center gap-50">
+        <section id="stack" className="w-full min-h-screen px-5 py-20 lg:py-40 text-white flex flex-col place-items-center gap-20 lg:gap-40">
             
             {/* Titulo */}
             <header className="flex flex-col place-items-center gap-4">
-                <h2 className="lg:text-5xl">{t("TituloUno")}</h2>
+                <h2 className="text-3xl sm:text-[clamp(1.875rem,4.1vw,3rem)] lg:text-5xl">{t("TituloUno")}</h2>
                 <hr className="w-1/2 border-2" />
             </header>
 
             {/* Mi Stack */}
-            <article className="flex flex-col place-items-center gap-20">
-                <h4 className="lg:text-2xl">{t("TituloDos")}</h4>
+            <article className="flex flex-col place-items-center gap-10 lg:gap-20">
+                <h4 className="text-center text-lg sm:text-[clamp(1.125rem,2.5vw,1.5rem)] lg:text-2xl">{t("TituloDos")}</h4>
                 
                 {/* Icons container */}
-                <ul className="flex place-items-center gap-10">
+                <ul className="flex flex-wrap w-[233px] sm:w-auto place-items-center gap-5 lg:flex-nowrap lg:gap-10 lg:max-h-20">
                     {/* Usar Clamp para la version mobile */}
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://nextjs.org/"><Next className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://es.react.dev/"><ReactLogo className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://www.typescriptlang.org/"><TypeScript className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://tailwindcss.com/"><TailwindCSS className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://www.postgresql.org/"><PostgresSQL className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://www.prisma.io/"><Prisma3 className="w-20 h-20" /></a></li>
+                    <li className="li-icon"><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://nextjs.org/"><Next className="iconTech" /></a></li>
+                    <li className="li-icon"><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://es.react.dev/"><ReactLogo className="iconTech" /></a></li>
+                    <li className="li-icon"><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://www.typescriptlang.org/"><TypeScript className="iconTech" /></a></li>
+                    <li className="li-icon"><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://tailwindcss.com/"><TailwindCSS className="iconTech" /></a></li>
+                    <li className="li-icon"><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://www.postgresql.org/"><PostgresSQL className="iconTech" /></a></li>
+                    <li className="li-icon"><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://www.prisma.io/"><Prisma3 className="iconTech" /></a></li>
                 </ul>
             </article>
 
             {/* Herramientas y otras tecnologías */}
-            <article className="flex flex-col place-items-center gap-20">
-                <h4 className="lg:text-2xl">{t("TituloTres")}</h4>
+            <article className="flex flex-col place-items-center gap-10 lg:gap-20">
+                <h4 className="text-center text-lg sm:text-[clamp(1.125rem,2.5vw,1.5rem)] lg:text-2xl">{t("TituloTres")}</h4>
 
                 {/* Icons container */}
-                <ul className="lg:grid lg:grid-cols-9 lg:grid-rows-3 place-items-center place-content-center justify-center gap-5">
+                <ul className="flex flex-wrap max-w-[500px] lg:max-w-[1096px] lg:grid lg:grid-cols-9 lg:grid-rows-3 place-items-center place-content-center justify-center gap-5">
                     {/* Usar Clamp para la version mobile */}
                     
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://git-scm.com/"><Git className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://github.com/"><GitHub className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://code.visualstudio.com/"><VisualStudioCode className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://trello.com/"><Trello className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://es.wikipedia.org/wiki/Scrum_(desarrollo_de_software)"><Image src="/logosTech/Scrum.png" width={90} height={90} alt="Scrum" className="w-20 h-[90px]" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://git-scm.com/install/"><Bash className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://www.postman.com/"><Postman className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://es.wikipedia.org/wiki/GNU/Linux"><Linux className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://nginx.org/"><NGINX className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://developer.mozilla.org/es/docs/Glossary/HTML"><HTML5 className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://developer.mozilla.org/es/docs/Web/CSS"><CSS3 className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://developer.mozilla.org/es/docs/Web/JavaScript"><JavaScript className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://vite.dev/"><Vite className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://redux-toolkit.js.org/"><Redux className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://nodejs.org/en"><Node className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://expressjs.com/"><Express className="w-20 h-20" fill="#FFFFFF" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://www.python.org/"><Python className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://www.django-rest-framework.org/"><DjangoREST className="w-26 h-26" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://www.mysql.com/"><MySQL className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://sqlite.org/"><SQLite className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://sequelize.org/"><Sequelize className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://redis.io/"><Redis className="w-20 h-20" /></a></li>
-                    <li><a className="iconTech" target="_blank" rel="noopener noreferrer" href="https://www.docker.com/"><Docker className="w-26 h-26" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://git-scm.com/"><Git className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://github.com/"><GitHub className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://code.visualstudio.com/"><VisualStudioCode className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://trello.com/"><Trello className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://es.wikipedia.org/wiki/Scrum_(desarrollo_de_software)"><Image src="/logosTech/Scrum.png" width={90} height={90} alt="Scrum" className="w-14 h-[66px] lg:w-20 lg:h-[90px] lg:hover:w-24 lg:hover:h-[106px] lg:hover:-translate-y-1 transition-all duration-300 ease-in-out" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/"><Figma className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://www.postman.com/"><Postman className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://git-scm.com/install/"><Bash className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://es.wikipedia.org/wiki/GNU/Linux"><Linux className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://developer.mozilla.org/es/docs/Glossary/HTML"><HTML5 className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://developer.mozilla.org/es/docs/Web/CSS"><CSS3 className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://developer.mozilla.org/es/docs/Web/JavaScript"><JavaScript className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://vite.dev/"><Vite className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://redux-toolkit.js.org/"><Redux className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://nodejs.org/en"><Node className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://expressjs.com/"><Express className="iconTech-small" fill="#FFFFFF" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://www.python.org/"><Python className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://www.django-rest-framework.org/"><DjangoREST className="iconTech-docker-rest" /></a></li>
+                    <li className="li-icon lg:col-start-2"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://www.mysql.com/"><MySQL className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://sqlite.org/"><SQLite className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://sequelize.org/"><Sequelize className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://vercel.com/"><Vercel className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://redis.io/"><Redis className="iconTech-small" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://www.docker.com/"><Docker className="iconTech-docker-rest" /></a></li>
+                    <li className="li-icon"><a className="iconTech-small" target="_blank" rel="noopener noreferrer" href="https://nginx.org/"><NGINX className="iconTech-small" /></a></li>
                 </ul>
             </article>
         </section>
