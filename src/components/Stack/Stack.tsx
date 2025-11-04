@@ -17,7 +17,7 @@ const Stack = () => {
             
             {/* Titulo */}
             <header className="flex flex-col place-items-center gap-4">
-                <h2 className="text-3xl sm:text-[clamp(1.875rem,4.1vw,3rem)] lg:text-5xl">{t("TituloUno")}</h2>
+                <h2 className="mb-4 text-3xl sm:text-[clamp(1.875rem,4.1vw,3rem)] lg:text-5xl">{t("TituloUno")}</h2>
                 <hr className="w-1/2 border-2" />
             </header>
 

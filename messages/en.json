@@ -27,5 +27,27 @@
         "TituloUno": "Tech Stack",
         "TituloDos": "Technologies I Specialize In",
         "TituloTres": "Tools and Other Technologies I Work With"
+    },
+    "Experience": {
+        "TituloUno": "Experience",
+        "SubTituloUno": "Here you'll find some of the projects I've worked on, both personal and for clients",
+        "Proyectos": {
+            "Puntomind": {
+                "Titulo": "Puntomind",
+                "Tipo": "Client",
+                "Descripcion": "Web app for a management consultancy"
+            },
+            "Numa": {
+                "Titulo": "Numa",
+                "Tipo": "Personal",
+                "Descripcion": "Web app for managing finances"
+            },
+            "JustCoffee": {
+                "Titulo": "JustCoffee",
+                "Tipo": "Personal",
+                "Descripcion": "Website for coffee lovers"
+            }
+        },
+        "StackTitulo": "Tech stack used"
     }
 }

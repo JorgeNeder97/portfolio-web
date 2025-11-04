@@ -162,7 +162,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
             ? (layerStates.length - 1) * 0.07
             : 0;
         const panelInsertTime = lastTime + (layerStates.length ? 0.08 : 0);
-        const panelDuration = 1.5;
+        const panelDuration = 1;
 
         tl.fromTo(
             panel,
@@ -181,7 +181,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                 {
                     yPercent: 0,
                     rotate: 0,
-                    duration: 1,
+                    duration: .8,
                     ease: "power4.out",
                     stagger: { each: 0.1, from: "start" },
                 },
@@ -208,7 +208,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
             if (socialTitle)
                 tl.to(
                     socialTitle,
-                    { opacity: 1, duration: 0.5, ease: "power2.out" },
+                    { opacity: 1, duration: 0.6, ease: "power2.out" },
                     socialsStart
                 );
             if (socialLinks.length) {
@@ -217,14 +217,14 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                     {
                         y: 0,
                         opacity: 1,
-                        duration: 0.35,
+                        duration: 0.5,
                         ease: "power3.out",
                         stagger: { each: 0.08, from: "start" },
                         onComplete: () => {
                             gsap.set(socialLinks, { clearProps: "opacity" });
                         },
                     },
-                    socialsStart + 0.04
+                    socialsStart
                 );
             }
         }

@@ -9,12 +9,20 @@
     --color-gray-text: #898d8e;
     --color-almost-white: #e9e9e9;
     --color-black-background: #0f0f0f;
+    --color-card-background: #191919;
     --color-accent: #105048;
     --color-foreground: var(--foreground);
+
+
+    --shadow-card: 0px 10px 15px 5px #111;
 }
+
+
+/* Busqueda: Componente.tsx Inicio o Componente.tsx Fin */
 
 @layer components {
     
+    /* Nav.tsx Inicio */
     .nav-li {
         @apply relative cursor-pointer pb-1 hover:text-white transition-all duration-300 ease-in-out
     }
@@ -22,7 +30,10 @@
     .nav-link {
         @apply after:block after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 group-hover:after:scale-x-100
     }
+    /* Nav.tsx Fin */
 
+
+    /* Stack.tsx Inicio */
     .li-icon {
         @apply w-16 h-16 lg:w-26 lg:h-26
         flex place-items-center place-content-center
@@ -45,6 +56,8 @@
         lg:hover:w-[120px] lg:hover:h-[120px] lg:-translate-x-2 lg:-translate-y-2
         transition-all duration-300 ease-in-out
     }
+    /* Stack.tsx Fin */
+
 }
 
 html,
@@ -52,6 +65,8 @@ body {
     width: 100%;
     height: 100%;
 }
+
+/* Globo del Hero Inicio */
 
 /* Animación de rebote del globo */
 @keyframes rebote-globo {
@@ -148,3 +163,4 @@ body {
    background: #f1f1f1;
    font-size: .75em;
 }
+/* Globo del Hero Fin */
