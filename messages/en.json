@@ -49,5 +49,50 @@
             }
         },
         "StackTitulo": "Tech stack used"
+    },
+    "About": {
+        "TituloUno": "About Me",
+        "ContenidoUno": "I'm a friendly, curious, and perseverant person with a strong passion for web development. I spend most of my day creating, learning, and improving frontend and full-stack projects.",
+        "ContenidoDos": "I'm motivated by constant growth and enjoy sharing my knowledge, because teaching also helps me learn.",
+        "ContenidoTres": "I'm looking to join a team where I can continue growing, contribute value, and learn from others.",
+        "SubtituloUno": "Soft Skills",
+        "HabilidadUno": {
+            "Titulo": "Communication\nand Teamwork",
+            "Descripcion": "I listen, share, and build solutions together with others"
+        },
+        "HabilidadDos": {
+            "Titulo": "Perseverance\nand Focus",
+            "Descripcion": "I don't stop until I achieve clear results"
+        },
+        "HabilidadTres": {
+            "Titulo": "Proactive\nAttitude",
+            "Descripcion": "I take initiative and constantly look for ways to improve processes"
+        },
+        "HabilidadCuatro": {
+            "Titulo": "Continuous\nLearning",
+            "Descripcion": "Every project is an opportunity to grow"
+        },
+        "HabilidadCinco": {
+            "Titulo": "Empathy and\nCollaboration",
+            "Descripcion": "I care about the team's well-being as much as the final outcome"
+        },
+        "HabilidadSeis": {
+            "Titulo": "Problem\nSolving",
+            "Descripcion": "I approach challenges with logic and creativity to find simple and efficient solutions"
+        }
+    },
+    "Contact": {
+        "TituloUno": "Let's Work Together",
+        "DescripcionTituloUno": "I'm open to new job opportunities where I can bring value",
+        "Redes": "Socials",
+        "Conclusion": "If my profile matches what you're looking for, feel free to reach out",
+        "Saludo": "Thanks for visiting my portfolio!"
+    },
+    "Version": {
+        "Titulo": "Version",
+        "Contenido": "2025 © Edition"
+    },
+    "HoraLocal": {
+        "Titulo": "Local Time"
     }
 }

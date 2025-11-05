@@ -1,5 +1,6 @@
 import ArrowRight from '@/assets/ArrowRight';
 import { Link } from '@/i18n/navigation';
+import { useLocale } from 'next-intl';
 import Image from 'next/image';
 import React from 'react'
 
@@ -14,10 +15,13 @@ export interface ProjectCard {
 }
 
 const ProjectCard = ({ title, type, description, stack, stackTitle, image, link } : ProjectCard) => {
-  return (
+    
+    const locale = useLocale();
+    
+    return (
     
     // Borde
-    <Link href={link} className="w-full max-w-[1080px] p-0.5 group relative border border-gray-800 rounded-xl">
+    <Link href={`/${link}`} className="w-full max-w-[1080px] p-0.5 group relative border border-gray-800 rounded-xl">
         
         
         {/* Card */}
@@ -31,10 +35,10 @@ const ProjectCard = ({ title, type, description, stack, stackTitle, image, link 
                 <ArrowRight className="text-gray-background group-hover:text-gray-100 transition-all duration-300 ease-in-out" />
             </div>
 
-            <div className="w-full z-10 flex flex-col lg:flex-row lg:place-items-end place-items-start place-content-start gap-5 lg:gap-[clamp(40px,10vw,100px)]">
+            <div className="w-full z-10 flex flex-col lg:flex-row lg:flex-wrap lg:place-items-end place-items-start place-content-start gap-5 lg:gap-[clamp(40px,10vw,100px)]">
                 {/* Titulo */}
                 <div className="flex flex-col place-items-start gap-5">
-                    <h3 className="lg:text-2xl">{title}</h3>
+                    <h3 className="text-lg md:text-xl lg:text-2xl">{title}</h3>
                     <span className="lg:w-[410px]">{type} - {description}</span>
                 </div>
 

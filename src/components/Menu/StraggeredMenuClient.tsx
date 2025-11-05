@@ -63,7 +63,7 @@ const StaggeredMenuClient = (props: StaggeredMenuProps) => {
         {
             label: t("Experiencia"),
             ariaLabel: t("ExperienciaLabel"),
-            link: `${locale}#exp`,
+            link: `${locale}#experience`,
         },
         {
             label: t("MiStack"),
@@ -73,12 +73,12 @@ const StaggeredMenuClient = (props: StaggeredMenuProps) => {
         {
             label: t("SobreMi"),
             ariaLabel: t("SobreMiLabel"),
-            link: `${locale}#me`,
+            link: `${locale}#about`,
         },
         {
             label: t("Contacto"),
             ariaLabel: t("ContactoLabel"),
-            link: `${locale}#cont`,
+            link: `${locale}#contact`,
         },
     ];
 

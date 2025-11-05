@@ -13,10 +13,13 @@
     --color-accent: #105048;
     --color-foreground: var(--foreground);
 
+    --breakpoint-hd: 120rem;
 
     --shadow-card: 0px 10px 15px 5px #111;
 }
 
+/* Nuevo Breakpoint para 1920 */
+@custom-media --hd (min-width: 120rem);
 
 /* Busqueda: Componente.tsx Inicio o Componente.tsx Fin */
 
@@ -57,6 +60,14 @@
         transition-all duration-300 ease-in-out
     }
     /* Stack.tsx Fin */
+
+
+    /* Contact.tsx Inicio */
+    .socialIcons {
+        @apply text-white
+        hover:text-black-background
+        transition-all duration-300 ease-in-out
+    }
 
 }
 

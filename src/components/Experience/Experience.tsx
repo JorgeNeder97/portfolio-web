@@ -9,7 +9,7 @@ const Experience = () => {
     const tp = useTranslations("Experience.Proyectos");
 
     return (
-        <section id="exp" className="w-full min-h-screen text-white px-5 pt-20 lg:pt-40 flex flex-col place-items-center gap-20 lg:gap-40">
+        <section id="experience" className="w-full min-h-screen text-white px-5 pt-20 lg:pt-40 flex flex-col place-items-center gap-20 lg:gap-40">
             
             {/* Titulo */}
             <header className="max-w-[640px] flex flex-col place-items-center gap-4">
@@ -29,7 +29,7 @@ const Experience = () => {
                         stack={project.stack}
                         stackTitle={t("StackTitulo")}
                         image={project.image}
-                        link=""
+                        link={project.id}
                     />
                 ))}
             </div>

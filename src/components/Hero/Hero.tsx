@@ -35,7 +35,7 @@ const Hero = () => {
 
                 <Image
                     className="absolute bottom-0 lg:right-[42%] translate-x-[12%] lg:translate-x-[58%] max-w-[clamp(830px,100vw,1800px)] max-h-[calc(100vh-50px)] lg:h-screen lg:w-auto object-contain lg:object-cover"
-                    src="/Hero2.png"
+                    src="/Hero.png"
                     width={2278}
                     height={2278}
                     alt="Jorge Lian Neder Allub"

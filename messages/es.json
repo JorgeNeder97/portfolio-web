@@ -49,5 +49,50 @@
             }
         },
         "StackTitulo": "Stack utilizado"
+    },
+    "About": {
+        "TituloUno": "Sobre Mi",
+        "ContenidoUno": "Soy una persona amigable, curiosa, perseverante y apasionada por el desarrollo web. Paso la mayor parte del día creando, aprendiendo y mejorando proyectos frontend y fullstack.",
+        "ContenidoDos": "Me motiva el crecimiento constante y disfruto de compartir mis conocimientos, porque enseñar también me hace aprender.",
+        "ContenidoTres": "Busco formar parte de un equipo donde pueda seguir creciendo, aportar valor y aprender de los demás.",
+        "SubtituloUno": "Habilidades blandas",
+        "HabilidadUno": {
+            "Titulo": "Comunicación y\nTrabajo en Equipo",
+            "Descripcion": "Escucho, comparto y construyo soluciones junto a otros"
+        },
+        "HabilidadDos": {
+            "Titulo": "Perseverancia\ny Enfoque",
+            "Descripcion": "No paro hasta alcanzar resultados claros"
+        },
+        "HabilidadTres": {
+            "Titulo": "Actitud\nProactiva",
+            "Descripcion": "Tomo la iniciativa y busco mejorar procesos constantemente"
+        },
+        "HabilidadCuatro": {
+            "Titulo": "Aprendizaje\nContinuo",
+            "Descripcion": "Cada proyecto es una oportunidad para crecer"
+        },
+        "HabilidadCinco": {
+            "Titulo": "Empatía y\nColaboración",
+            "Descripcion": "Me importa el bienestar del equipo tanto como el resultado"
+        },
+        "HabilidadSeis": {
+            "Titulo": "Resolucion\nde Problemas",
+            "Descripcion": "Analizo los desafíos con lógica y creatividad para encontrar soluciones simples y eficientes"
+        }
+    },
+    "Contact": {
+        "TituloUno": "Trabajemos Juntos",
+        "DescripcionTituloUno": "Estoy abierto a nuevas oportunidades laborales donde pueda aportar valor",
+        "Redes": "Mis Redes",
+        "Conclusion": "Si mi perfil encaja con lo que estás buscando, no dudes en escribirme",
+        "Saludo": "¡Gracias por visitar mi portfolio!"
+    },
+    "Version": {
+        "Titulo": "Versión",
+        "Contenido": "Edición © 2025"
+    },
+    "HoraLocal": {
+        "Titulo": "Hora Local"
     }
 }

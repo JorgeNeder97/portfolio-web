@@ -1,3 +1,5 @@
+import AboutClient from "@/components/About/AboutClient";
+import ContactClient from "@/components/Contact/ContactClient";
 import ExperienceClient from "@/components/Experience/ExperienceClient";
 import HeroClient from "@/components/Hero/HeroClient";
 import Nav from "@/components/Nav/Nav";
@@ -13,9 +15,10 @@ const HomePage = () => {
             <main className="w-full min-h-screen bg-black-background flex flex-col place-items-center">
                 <ExperienceClient />
                 <Stack />
+                <AboutClient />
             </main>
-            <footer>
-
+            <footer className="w-full min-h-screen bg-gray-background flex place-items-center place-content-center">
+                <ContactClient />
             </footer>
         </>
     );
