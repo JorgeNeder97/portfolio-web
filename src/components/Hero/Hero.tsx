@@ -2,6 +2,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import ScrollVelocity from "../Name/ScrollVelocity";
+import { Next, PostgresSQL, Prisma3, ReactLogo, TailwindCSS, TypeScript } from "@/assets/techLogos";
 
 const Hero = () => {
     const t = useTranslations("Hero");
@@ -9,9 +10,18 @@ const Hero = () => {
     return (
         <section id="hero" className="relative w-full min-h-screen max-h-screen bg-gray-background overflow-x-hidden">
             <div className="w-full h-screen flex place-items-center place-content-center">
-                <div className="text-white flex flex-col place-items-start -translate-x-[clamp(80px,20vw,280px)] lg:-translate-x-full -translate-y-24 lg:-translate-y-16 gap-8">
+                <div className="text-white flex flex-col place-items-start -translate-x-[clamp(80px,20vw,280px)] lg:-translate-x-full -translate-y-24 lg:-translate-y-16 gap-5 lg:gap-8">
                     <span className="text-[clamp(1.5rem,6vw,2rem)] lg:text-[clamp(2.25rem,2.6vw,4rem)]">
-                        FullStack <br /> Developer
+                        FullStack <br /> Developer <br />
+                        {/* Icons container */}
+                        <ul className="flex place-items-center gap-1 pt-5">
+                            <li className="w-[clamp(1.2rem,4.6vw,1.7rem)] h-[clamp(1.2rem,4.6vw,1.7rem)] lg:w-[clamp(1.7rem,2vw,3.2rem)] lg:h-[clamp(1.7rem,2vw,3.2rem)]"><Next className="w-[clamp(1.2rem,4.6vw,1.7rem)] h-[clamp(1.2rem,4.6vw,1.7rem)] lg:w-[clamp(1.7rem,2vw,3.2rem)] lg:h-[clamp(1.7rem,2vw,3.2rem)] drop-shadow-icon" /></li>
+                            <li className="w-[clamp(1.2rem,4.6vw,1.7rem)] h-[clamp(1.2rem,4.6vw,1.7rem)] lg:w-[clamp(1.7rem,2vw,3.2rem)] lg:h-[clamp(1.7rem,2vw,3.2rem)]"><ReactLogo className="w-[clamp(1.2rem,4.6vw,1.7rem)] h-[clamp(1.2rem,4.6vw,1.7rem)] lg:w-[clamp(1.7rem,2vw,3.2rem)] lg:h-[clamp(1.7rem,2vw,3.2rem)] drop-shadow-icon" /></li>
+                            <li className="w-[clamp(1.2rem,4.6vw,1.7rem)] h-[clamp(1.2rem,4.6vw,1.7rem)] lg:w-[clamp(1.7rem,2vw,3.2rem)] lg:h-[clamp(1.7rem,2vw,3.2rem)]"><TypeScript className="w-[clamp(1.2rem,4.6vw,1.7rem)] h-[clamp(1.2rem,4.6vw,1.7rem)] lg:w-[clamp(1.7rem,2vw,3.2rem)] lg:h-[clamp(1.7rem,2vw,3.2rem)] drop-shadow-icon" /></li>
+                            <li className="w-[clamp(1.2rem,4.6vw,1.7rem)] h-[clamp(1.2rem,4.6vw,1.7rem)] lg:w-[clamp(1.7rem,2vw,3.2rem)] lg:h-[clamp(1.7rem,2vw,3.2rem)]"><TailwindCSS className="w-[clamp(1.2rem,4.6vw,1.7rem)] h-[clamp(1.2rem,4.6vw,1.7rem)] lg:w-[clamp(1.7rem,2vw,3.2rem)] lg:h-[clamp(1.7rem,2vw,3.2rem)] drop-shadow-icon" /></li>
+                            <li className="w-[clamp(1.2rem,4.6vw,1.7rem)] h-[clamp(1.2rem,4.6vw,1.7rem)] lg:w-[clamp(1.7rem,2vw,3.2rem)] lg:h-[clamp(1.7rem,2vw,3.2rem)]"><PostgresSQL className="w-[clamp(1.2rem,4.6vw,1.7rem)] h-[clamp(1.2rem,4.6vw,1.7rem)] lg:w-[clamp(1.7rem,2vw,3.2rem)] lg:h-[clamp(1.7rem,2vw,3.2rem)] drop-shadow-icon" /></li>
+                            <li className="w-[clamp(1.2rem,4.6vw,1.7rem)] h-[clamp(1.2rem,4.6vw,1.7rem)] lg:w-[clamp(1.7rem,2vw,3.2rem)] lg:h-[clamp(1.7rem,2vw,3.2rem)]"><Prisma3 className="w-[clamp(1.2rem,4.6vw,1.7rem)] h-[clamp(1.2rem,4.6vw,1.7rem)] lg:w-[clamp(1.7rem,2vw,3.2rem)] lg:h-[clamp(1.7rem,2vw,3.2rem)] drop-shadow-icon" /></li>
+                        </ul>
                     </span>
 
                     <div className="flex place-items-center place-content-center gap-4">

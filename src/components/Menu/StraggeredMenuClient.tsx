@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { StaggeredMenuProps } from "@/components/Menu/StaggeredMenu";
 import { useTranslations, useLocale } from "next-intl";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const StaggeredMenu = dynamic(() => import("@/components/Menu/StaggeredMenu"), {
     ssr: false,
@@ -11,6 +12,7 @@ const StaggeredMenu = dynamic(() => import("@/components/Menu/StaggeredMenu"), {
 const StaggeredMenuClient = (props: StaggeredMenuProps) => {
     const t = useTranslations("Menu");
     const locale = useLocale();
+    const pathname = usePathname();
 
     const [showMenu, setShowMenu] = useState(false);
     const [isDesktop, setIsDesktop] = useState(false);
@@ -58,8 +60,10 @@ const StaggeredMenuClient = (props: StaggeredMenuProps) => {
         };
     }, [isDesktop]);
 
+    const isHomePage = pathname === `/${locale}`;
+
     const menuItems = [
-        { label: t("Inicio"), ariaLabel: t("InicioLabel"), link: `/${locale}` },
+        { label: t("Inicio"), ariaLabel: t("InicioLabel"), link: isHomePage ? `/${locale}#hero` : `/${locale}` },
         {
             label: t("Experiencia"),
             ariaLabel: t("ExperienciaLabel"),

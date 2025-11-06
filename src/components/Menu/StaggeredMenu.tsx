@@ -493,6 +493,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                                         href={it.link}
                                         aria-label={it.ariaLabel}
                                         data-index={idx + 1}
+                                        onClick={toggleMenu}
                                     >
                                         <span className="sm-panel-itemLabel inline-block origin-[50%_100%] will-change-transform hover:text-gray-text transition-colors duration-200 ease-in-out">
                                             {it.label}

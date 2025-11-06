@@ -7,10 +7,11 @@ type Props = {
 const ProyectPage = ({ params } : Props) => {
 
     // const project = 
+    const nombre = params.id;
 
     return (
-        <section className="bg-black-background">
-            <div></div>
+        <section className="bg-black-background w-screen h-screen text-white">
+            <div>{nombre}</div>
         </section>
     );
 };

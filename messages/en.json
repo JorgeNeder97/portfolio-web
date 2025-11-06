@@ -52,9 +52,8 @@
     },
     "About": {
         "TituloUno": "About Me",
-        "ContenidoUno": "I'm a friendly, curious, and perseverant person with a strong passion for web development. I spend most of my day creating, learning, and improving frontend and full-stack projects.",
-        "ContenidoDos": "I'm motivated by constant growth and enjoy sharing my knowledge, because teaching also helps me learn.",
-        "ContenidoTres": "I'm looking to join a team where I can continue growing, contribute value, and learn from others.",
+        "ContenidoUno": "I'm a passionate developer who loves building solutions that make a real impact. Curiosity, perseverance, and a genuine commitment to growth — both personal and within the team — are what drive me.",
+        "ContenidoDos": "I truly believe the best results come from collaboration. That's why I enjoy sharing knowledge, learning from others, and putting my energy into achieving great things together.",
         "SubtituloUno": "Soft Skills",
         "HabilidadUno": {
             "Titulo": "Communication\nand Teamwork",

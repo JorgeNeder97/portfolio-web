@@ -17,7 +17,7 @@ const About = () => {
                     
                     {/* Titulo */}
                     <header className="z-20 max-w-[640px] flex flex-col place-items-center">
-                        <h2 className="text-3xl mb-4 sm:text-[clamp(1.875rem,4.1vw,3rem)] lg:text-5xl">
+                        <h2 className="text-3xl mb-4 sm:text-[clamp(1.875rem,4.1vw,3rem)] lg:text-4xl">
                             {t("TituloUno")}
                         </h2>
                         <hr className="w-7/9 border-2" />
@@ -25,15 +25,14 @@ const About = () => {
 
                     {/* Contenido */}
                     <div className="z-20 max-w-4/5 lg:max-w-3/5 hd:max-w-3/6">
-                        <p className="text-base font-light leading-7 tracking-wide">{t("ContenidoUno")}</p>
-                        <p className="text-base font-light leading-7 tracking-wide">{t("ContenidoDos")}</p>
-                        <p className="text-base font-light leading-7 tracking-wide">{t("ContenidoTres")}</p>
+                        <p className="text-base text-center lg:text-left font-thin leading-7 tracking-wide">{t("ContenidoUno")}</p>
+                        <p className="text-base text-center lg:text-left font-thin leading-7 tracking-wide">{t("ContenidoDos")}</p>
                     </div>
                 </div>
 
                 {/* Habilidades Blandas */}
                 <div className="z-20 flex flex-col place-items-center lg:place-items-start gap-8 hd:gap-20">
-                    <h4 className="text-lg text-center lg:text-left lg:text-2xl">{t("SubtituloUno")}</h4>
+                    <h4 className="text-lg text-center lg:text-left lg:text-xl">{t("SubtituloUno")}</h4>
                     <ul className="flex flex-col md:grid md:grid-cols-2 md:grid-rows-3 lg:grid lg:grid-cols-3 lg:grid-rows-2 gap-8">
                         <li><SoftSkillCard title={t("HabilidadUno.Titulo")} content={t("HabilidadUno.Descripcion")} /></li>
                         <li><SoftSkillCard title={t("HabilidadDos.Titulo")} content={t("HabilidadDos.Descripcion")} /></li>

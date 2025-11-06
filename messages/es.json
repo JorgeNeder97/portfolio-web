@@ -52,9 +52,8 @@
     },
     "About": {
         "TituloUno": "Sobre Mi",
-        "ContenidoUno": "Soy una persona amigable, curiosa, perseverante y apasionada por el desarrollo web. Paso la mayor parte del día creando, aprendiendo y mejorando proyectos frontend y fullstack.",
-        "ContenidoDos": "Me motiva el crecimiento constante y disfruto de compartir mis conocimientos, porque enseñar también me hace aprender.",
-        "ContenidoTres": "Busco formar parte de un equipo donde pueda seguir creciendo, aportar valor y aprender de los demás.",
+        "ContenidoUno": "Soy un desarrollador apasionado por crear soluciones que generen impacto. Me caracteriza la curiosidad, la perseverancia y un fuerte compromiso con el crecimiento personal y del equipo.",
+        "ContenidoDos": "Creo firmemente que los mejores resultados surgen de la colaboración, por eso disfruto compartir conocimientos, aprender de otros y aportar mi energía para alcanzar metas en conjunto.",
         "SubtituloUno": "Habilidades blandas",
         "HabilidadUno": {
             "Titulo": "Comunicación y\nTrabajo en Equipo",

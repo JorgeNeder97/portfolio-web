@@ -38,25 +38,25 @@
 
     /* Stack.tsx Inicio */
     .li-icon {
-        @apply w-16 h-16 lg:w-26 lg:h-26
+        @apply w-12 h-12 lg:w-14 lg:h-14
         flex place-items-center place-content-center
     }
 
     .iconTech {
-        @apply w-16 h-16 lg:w-20 lg:h-20
-        hover:cursor-pointer lg:hover:w-32 lg:hover:h-32
+        @apply w-12 h-12 lg:w-20 lg:h-20
+        hover:cursor-pointer lg:hover:w-[110px] lg:hover:h-[110px]
         transition-all duration-300 ease-in-out
     }
 
     .iconTech-small {
-        @apply w-14 h-14 lg:w-20 lg:h-20
-        hover:cursor-pointer lg:hover:w-24 lg:hover:h-24
+        @apply w-12 h-12 lg:w-14 lg:h-14
+        hover:cursor-pointer lg:hover:w-18 lg:hover:h-18
         transition-all duration-300 ease-in-out
     }
 
     .iconTech-docker-rest {
-        @apply w-16 h-16 -translate-x-1 -translate-y-1 lg:w-26 lg:h-26 
-        lg:hover:w-[120px] lg:hover:h-[120px] lg:-translate-x-2 lg:-translate-y-2
+        @apply w-14 h-14 -translate-x-1 -translate-y-1 lg:w-16 lg:h-16 
+        lg:hover:w-22 lg:hover:h-22 lg:-translate-x-2 lg:-translate-y-2
         transition-all duration-300 ease-in-out
     }
     /* Stack.tsx Fin */
