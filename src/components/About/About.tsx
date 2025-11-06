@@ -45,15 +45,15 @@ const About = () => {
             </div>
 
             {/* Light Overlay */}
-            <div className="opacity-0 lg:opacity-100 absolute inset-0 bg-[radial-gradient(60%_70%_at_90%_55%,rgba(255,255,255,0.3),transparent_70%)]"></div>
+            <div className="opacity-0 lg:opacity-100 absolute inset-0 bg-[radial-gradient(60%_70%_at_90%_55%,rgba(55,55,55,0.3),transparent_70%)]"></div>
 
 
             {/* Imagen */}
             <Image
                 className="absolute bottom-0 z-0 opacity-0 md:opacity-20 lg:opacity-100 lg:z-10 lg:right-10 max-w-[clamp(830px,100vw,1800px)] max-h-screen lg:h-screen lg:w-auto object-contain lg:object-cover"
-                src="/About.png"
-                width={2268}
-                height={3153}
+                src="/About.webp"
+                width={2048}
+                height={2876}
                 alt={t("TituloUno")}
             />
         </section>

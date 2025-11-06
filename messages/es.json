@@ -35,17 +35,36 @@
             "Puntomind": {
                 "Titulo": "Puntomind",
                 "Tipo": "Cliente",
-                "Descripcion": "App web para una consultora de gestión"
+                "Descripcion": "App web para una consultora de gestión",
+                "Contenido": "Saas (Software as a service) destinado a mejorar la gestión empresarial y la estratégia comercial de las empresas, con informes, matrices, métodos, métricas, gráficos y analiticas profesionales.",
+                "Caracteristicas": {
+                    "Titulo": "Funcionalidades destacadas"
+                }
             },
             "Numa": {
                 "Titulo": "Numa",
                 "Tipo": "Personal",
-                "Descripcion": "App web para administrar finanzas"
+                "Descripcion": "App web para administrar finanzas",
+                "Contenido": {
+                    "ContenidoUno": "Numa es una aplicación web pensada para ayudar a las personas a gestionar sus finanzas personales de forma simple y clara.",
+                    "ContenidoDos": "La mayoría de las herramientas financieras suelen ser complejas o poco intuitivas, así que mi objetivo fue crear una experiencia limpia, accesible y centrada en el usuario.",
+                    "ContenidoTres": "Desde el lado técnico, implementé rutas dinámicas, autenticación y autorización de usuarios, manejo de datos, diseño responsivo y despliegue en la nube."
+                },
+                "Caracteristicas": {
+                    "Titulo": "Funcionalidades destacadas"
+                }
             },
             "JustCoffee": {
                 "Titulo": "JustCoffee",
                 "Tipo": "Personal",
-                "Descripcion": "Web para los amantes del cafe"
+                "Descripcion": "Web para los amantes del cafe",
+                "Contenido": {
+                    "ContenidoUno": "Este proyecto nace de mi interés por el mundo del café y mi deseo de crear un sitio web moderno, visualmente atractivo y funcional para mostrar mis habilidades en desarrollo web.",
+                    "ContenidoDos": "Además, quise experimentar con la estructura de un proyecto real: rutas, datos locales, desplegar en la nube."
+                },
+                "Caracteristicas": {
+                    "Titulo": "Características destacadas"
+                }
             }
         },
         "StackTitulo": "Stack utilizado"

@@ -1,7 +1,7 @@
 "use client";
 import { useTranslations } from "next-intl";
 import ProjectCard from "../ProjectCard/ProjectCard";
-import { projectsPreview } from "@/data/projectsPreview";
+import { projectsPreview } from "@/data/projects";
 
 const Experience = () => {
 
