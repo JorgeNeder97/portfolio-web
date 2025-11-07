@@ -9,7 +9,7 @@ const Experience = () => {
     const tp = useTranslations("Experience.Proyectos");
 
     return (
-        <section id="experience" className="w-full min-h-screen text-white px-5 pt-20 lg:pt-40 flex flex-col place-items-center gap-20 lg:gap-30">
+        <section id="experience" className="w-full min-h-screen text-white px-5 pt-20 lg:pt-30 flex flex-col place-items-center gap-20 lg:gap-30">
             
             {/* Titulo */}
             <header className="max-w-[640px] flex flex-col place-items-center gap-4">
