@@ -8,7 +8,7 @@ type ProjectHeroProps = {
 
 const ProjectHero = ({ title, description, link }: ProjectHeroProps) => {
     return (
-        <article className="min-h-screen w-screen flex flex-col place-items-center place-content-center">
+        <article id="projectHero" className="min-h-screen w-screen flex flex-col place-items-center place-content-center">
             <div className="flex flex-col place-items-center">
                 <h2>{title}</h2>
                 <hr />
