@@ -32,7 +32,7 @@ const About = () => {
 
                 {/* Habilidades Blandas */}
                 <div className="z-20 flex flex-col place-items-center lg:place-items-start gap-8 hd:gap-20">
-                    <h4 className="text-lg text-center lg:text-left lg:text-xl">{t("SubtituloUno")}</h4>
+                    <h3 className="text-lg text-center lg:text-left lg:text-xl">{t("SubtituloUno")}</h3>
                     <ul className="flex flex-col md:grid md:grid-cols-2 md:grid-rows-3 lg:grid lg:grid-cols-3 lg:grid-rows-2 gap-8">
                         <li><SoftSkillCard title={t("HabilidadUno.Titulo")} content={t("HabilidadUno.Descripcion")} /></li>
                         <li><SoftSkillCard title={t("HabilidadDos.Titulo")} content={t("HabilidadDos.Descripcion")} /></li>
@@ -52,9 +52,10 @@ const About = () => {
             <Image
                 className="absolute bottom-0 z-0 opacity-0 md:opacity-20 lg:opacity-100 lg:z-10 lg:right-10 max-w-[clamp(830px,100vw,1800px)] max-h-screen lg:h-screen lg:w-auto object-contain lg:object-cover"
                 src="/About.webp"
-                width={2048}
-                height={2876}
+                width={1800}
+                height={1800}
                 alt={t("TituloUno")}
+                loading="lazy"
             />
         </section>
     );

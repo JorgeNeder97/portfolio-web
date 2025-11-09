@@ -46,10 +46,12 @@ const Hero = () => {
                 <Image
                     className="absolute bottom-0 lg:right-[42%] translate-x-[12%] lg:translate-x-[58%] max-w-[clamp(830px,100vw,1800px)] max-h-[calc(100vh-50px)] lg:h-screen lg:w-auto object-contain lg:object-cover"
                     src="/Hero.webp"
-                    width={2278}
-                    height={2278}
+                    width={1800}
+                    height={1800}
                     alt="Jorge Lian Neder Allub"
+                    quality={90}
                     priority={true}
+                    sizes="(max-width: 640px) 90vw, (max-width: 1024px) 80vw, (max-width: 1280px) 560px, (max-width: 1536px) 640px, 900px"
                 />
             </div>
 

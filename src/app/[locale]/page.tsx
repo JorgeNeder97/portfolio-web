@@ -9,6 +9,7 @@ const HomePage = () => {
     return (
         <>
             <header className="w-full min-h-screen text-almost-white">
+                <h1 className="sr-only">Jorge Lian Neder – Portfolio de Fullstack Web Developer</h1>
                 <Nav />
                 <HeroClient />
             </header>
@@ -24,5 +25,6 @@ const HomePage = () => {
         </>
     );
 };
+
 
 export default HomePage;
