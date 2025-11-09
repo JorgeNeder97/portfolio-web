@@ -1,5 +1,6 @@
 "use client";
 import FuzzyText from "@/components/Texts/FuzzyText";
+import Link from "next/link";
 
 export default function GlobalNotFound() {
     return (
@@ -9,7 +10,7 @@ export default function GlobalNotFound() {
                     baseIntensity={0.2}
                     hoverIntensity={0.3}
                     enableHover={true}
-                    fontSize="clamp(8rem, 28vw, 10rem)"
+                    fontSize="7rem"
                 >
                     404
                 </FuzzyText>
@@ -17,12 +18,21 @@ export default function GlobalNotFound() {
                     baseIntensity={0.2}
                     hoverIntensity={0.3}
                     enableHover={true}
-                    fontSize="clamp(4rem, 28vw, 5rem)"
+                    fontSize="3rem"
                 >
                     not found
                 </FuzzyText>
-                <div className="absolute bottom-5 right-5 z-20">
-                    
+                <div className="absolute top-15 right-5 z-10 text-white">
+                    <Link href="/es">
+                        <FuzzyText
+                            baseIntensity={0}
+                            hoverIntensity={0.1}
+                            enableHover={true}
+                            fontSize="1.2rem"
+                        >
+                            Portfolio
+                        </FuzzyText>
+                    </Link>
                 </div>
             </body>
         </html>

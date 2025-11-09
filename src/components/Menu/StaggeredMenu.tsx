@@ -73,6 +73,8 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 
     const itemEntranceTweenRef = useRef<gsap.core.Tween | null>(null);
 
+    
+
     useLayoutEffect(() => {
         const ctx = gsap.context(() => {
             const panel = panelRef.current;
@@ -412,6 +414,38 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
         onMenuOpen,
         onMenuClose,
     ]);
+
+    React.useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            const panel = panelRef.current;
+            const toggleBtn = toggleBtnRef.current;
+
+            if (!panel || !toggleBtn) return;
+
+            // Si el click fue fuera del panel y del botón
+            if (
+                openRef.current &&
+                !panel.contains(event.target as Node) &&
+                !toggleBtn.contains(event.target as Node)
+            ) {
+                // Cierra el menú
+                openRef.current = false;
+                setOpen(false);
+                onMenuClose?.();
+                playClose();
+                animateIcon(false);
+                animateColor(false);
+                animateText(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [onMenuClose, playClose, animateIcon, animateColor, animateText]);
+
 
     const t = useTranslations("Menu");
 

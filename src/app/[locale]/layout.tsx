@@ -3,7 +3,9 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Poppins } from "next/font/google";
 import StaggeredMenuClient from "@/components/Menu/StraggeredMenuClient";
-import SmoothScroll from "@/components/SmoothScroll/SmoothScroll";
+import { LenisProvider } from "@/context/LenisContext";
+import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
+import PageWrapper from "@/components/PageWrapper/PageWrapper";
 
 const poppins = Poppins({
     weight: ["200", "300", "400", "500", "600", "700"],
@@ -26,12 +28,17 @@ export default async function LocaleLayout({
 
     return (
         <html lang={locale}>
-            <body className={`${poppins.className} antialiased overflow-x-hidden relative`}>
+            <body
+                className={`${poppins.className} antialiased overflow-x-hidden relative`}
+            >
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     <StaggeredMenuClient isFixed={true} />
-                    <SmoothScroll>
-                        {children}
-                    </SmoothScroll>
+                    <LenisProvider>
+                        <LoadingScreen />
+                        <PageWrapper>
+                            {children}
+                        </PageWrapper>
+                    </LenisProvider>
                 </NextIntlClientProvider>
             </body>
         </html>

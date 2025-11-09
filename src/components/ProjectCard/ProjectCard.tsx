@@ -21,7 +21,7 @@ const ProjectCard = ({ title, type, description, stack, stackTitle, image, link 
     return (
     
     // Borde
-    <Link href={`/${link}`} className="w-full md:max-w-[700px] lg:max-w-[900px] hd:max-w-[1080px] p-0.5 group relative border border-gray-800 rounded-xl">
+    <a href={link} target="_blank" rel="noopener noreferrer" className="w-full md:max-w-[700px] lg:max-w-[900px] hd:max-w-[1080px] p-0.5 group relative border border-gray-800 rounded-xl">
         
         
         {/* Card */}
@@ -61,7 +61,7 @@ const ProjectCard = ({ title, type, description, stack, stackTitle, image, link 
                 <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent group-hover:opacity-0 rounded-t-lg transition-all duration-300 ease-in-out"></div>
             </div>
         </article>
-    </Link>
+    </a>
   )
 };
 

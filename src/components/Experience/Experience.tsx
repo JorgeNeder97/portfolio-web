@@ -29,7 +29,7 @@ const Experience = () => {
                         stack={project.stack}
                         stackTitle={t("StackTitulo")}
                         image={project.image}
-                        link={project.id}
+                        link={project.link}
                     />
                 ))}
             </div>
