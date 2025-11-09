@@ -5,8 +5,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Jorge Neder • Frontend Developer",
-    description:
-        "Portfolio web - Jorge Lian Neder Allub, Frontend & FullStack Developer.",
+    description: "Portfolio web - Jorge Lian Neder Allub, FullStack Developer.",
+    icons: {
+        icon: "/favicon.png",
+    }
 };
 
 type Props = {
