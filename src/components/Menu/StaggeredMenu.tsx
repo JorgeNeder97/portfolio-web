@@ -572,6 +572,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                                             <a
                                                 href={s.link}
                                                 target="_blank"
+                                                aria-label={s.label}
                                                 rel="noopener noreferrer"
                                                 className="sm-socials-link text-[1.2rem] font-normal text-[#111] hover:text-gray-background no-underline relative inline-block py-0.5 transition-[color,opacity] duration-200 ease-in-out"
                                                 tabIndex={open ? 0 : -1}

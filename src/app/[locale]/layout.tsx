@@ -28,6 +28,7 @@ export default async function LocaleLayout({
 
     return (
         <html lang={locale}>
+            <head />
             <body
                 className={`${poppins.className} antialiased overflow-x-hidden relative`}
             >
