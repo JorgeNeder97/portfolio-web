@@ -13,7 +13,7 @@ const HomePage = () => {
                 <HeroClient />
             </header>
             <main className="w-full min-h-screen bg-black-background flex flex-col place-items-center">
-                <div className="sticky top-0 bg-linear-to-b z-30 from-black-background via-black-background/70 to-transparent w-screen h-20"></div>
+                <div className="sticky top-0 bg-linear-to-b z-30 from-black-background via-black-background/60 to-transparent w-screen h-28 lg:h-0"></div>
                 <ExperienceClient />
                 <Stack />
                 <AboutClient />
