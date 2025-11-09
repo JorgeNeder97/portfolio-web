@@ -11,7 +11,7 @@ const Stack = () => {
     const t = useTranslations("Stack");
 
     return (
-        <section id="stack" className="w-full min-h-screen px-5 py-20 lg:py-30 text-white flex flex-col place-items-center gap-20 lg:gap-30">
+        <section id="stack" className="w-full min-h-screen px-5 py-20 lg:py-30 text-white flex flex-col place-items-center gap-20 lg:gap-25">
             
             {/* Titulo */}
             <header className="flex flex-col place-items-center gap-4">
@@ -20,7 +20,7 @@ const Stack = () => {
             </header>
 
             {/* Mi Stack */}
-            <article className="flex flex-col place-items-center gap-10 lg:gap-20">
+            <article className="flex flex-col place-items-center gap-10 lg:gap-18">
                 <h4 className="text-center text-lg sm:text-[clamp(1.125rem,2.5vw,1.5rem)] lg:text-xl">{t("TituloDos")}</h4>
                 
                 {/* Icons container */}
@@ -36,7 +36,7 @@ const Stack = () => {
             </article>
 
             {/* Herramientas y otras tecnologías */}
-            <article className="flex flex-col place-items-center gap-10 lg:gap-20">
+            <article className="flex flex-col place-items-center gap-10 lg:gap-18">
                 <h4 className="text-center text-lg sm:text-[clamp(1.125rem,2.5vw,1.5rem)] lg:text-xl">{t("TituloTres")}</h4>
 
                 {/* Icons container */}

@@ -39,20 +39,12 @@ const StaggeredMenuClient = (props: StaggeredMenuProps) => {
             // Reintenta hasta 1 segundo máximo (10 veces cada 100ms)
             for (let i = 0; i < 10; i++) {
                 const hero = document.querySelector("#hero");
-                const projectHero = document.querySelector("#projectHero");
                 if (hero) {
                     observer = new IntersectionObserver(
                         ([entry]) => setShowMenu(!entry.isIntersecting),
                         { threshold: 0.1 }
                     );
                     observer.observe(hero);
-                    return;
-                } else if (projectHero) {
-                    observer = new IntersectionObserver(
-                        ([entry]) => setShowMenu(!entry.isIntersecting),
-                        { threshold: 0.1 }
-                    );
-                    observer.observe(projectHero);
                     return;
                 }
                 await new Promise((r) => setTimeout(r, 100));
