@@ -4,7 +4,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Jorge Neder • Frontend Developer",
+    title: "Jorge Neder • FullStack Developer",
     description: "Portfolio web - Jorge Lian Neder Allub, FullStack Developer.",
     icons: {
         icon: "/favicon.png",
