@@ -11,6 +11,7 @@ export interface StaggeredMenuItem {
 export interface StaggeredMenuSocialItem {
     label: string;
     link: string;
+    ariaLabel: string;
 }
 export interface StaggeredMenuProps {
     position?: "left" | "right";
@@ -25,6 +26,7 @@ export interface StaggeredMenuProps {
     openMenuButtonColor?: string;
     accentColor?: string;
     isFixed: boolean;
+    forceClose?: boolean;
     changeMenuColorOnOpen?: boolean;
     onMenuOpen?: () => void;
     onMenuClose?: () => void;
@@ -44,6 +46,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
     changeMenuColorOnOpen = true,
     accentColor = "#5227FF",
     isFixed = false,
+    forceClose,
     onMenuOpen,
     onMenuClose,
 }: StaggeredMenuProps) => {
@@ -446,6 +449,19 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
         };
     }, [onMenuClose, playClose, animateIcon, animateColor, animateText]);
 
+    // Maneja el cierre del menu desde fuera sincronizandolo con la visibilidad del hero
+    React.useEffect(() => {
+        if (forceClose && openRef.current) {
+            openRef.current = false;
+            setOpen(false);
+            onMenuClose?.();
+            playClose();
+            animateIcon(false);
+            animateColor(false);
+            animateText(false);
+        }
+    }, [forceClose, onMenuClose, playClose, animateIcon, animateColor, animateText]);
+
 
     const t = useTranslations("Menu");
 
@@ -572,7 +588,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                                             <a
                                                 href={s.link}
                                                 target="_blank"
-                                                aria-label={s.label}
+                                                aria-label={s.ariaLabel}
                                                 rel="noopener noreferrer"
                                                 className="sm-socials-link text-[1.2rem] font-normal text-[#111] hover:text-gray-background no-underline relative inline-block py-0.5 transition-[color,opacity] duration-200 ease-in-out"
                                                 tabIndex={open ? 0 : -1}

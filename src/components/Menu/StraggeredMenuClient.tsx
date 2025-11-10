@@ -63,25 +63,25 @@ const StaggeredMenuClient = (props: StaggeredMenuProps) => {
     const isHomePage = pathname === `/${locale}`;
 
     const menuItems = [
-        { label: t("Inicio"), ariaLabel: t("InicioLabel"), link: isHomePage ? `/${locale}#hero` : `/${locale}` },
+        { label: t("Inicio"), ariaLabel: t("Inicio"), link: isHomePage ? `/${locale}#hero` : `/${locale}` },
         {
             label: t("Experiencia"),
-            ariaLabel: t("ExperienciaLabel"),
+            ariaLabel: t("Experiencia"),
             link: `${locale}#experience`,
         },
         {
             label: t("MiStack"),
-            ariaLabel: t("MiStackLabel"),
+            ariaLabel: t("MiStack"),
             link: `${locale}#stack`,
         },
         {
             label: t("SobreMi"),
-            ariaLabel: t("SobreMiLabel"),
+            ariaLabel: t("SobreMi"),
             link: `${locale}#about`,
         },
         {
             label: t("Contacto"),
-            ariaLabel: t("ContactoLabel"),
+            ariaLabel: t("Contacto"),
             link: `${locale}#contact`,
         },
     ];
@@ -90,9 +90,18 @@ const StaggeredMenuClient = (props: StaggeredMenuProps) => {
         {
             label: "Instagram",
             link: "https://www.instagram.com/jorge_neder97/",
+            ariaLabel: "Instagram",
         },
-        { label: "GitHub", link: "https://github.com/JorgeNeder97" },
-        { label: "LinkedIn", link: "https://www.linkedin.com/in/jorge-neder/" },
+        { 
+            label: "GitHub", 
+            link: "https://github.com/JorgeNeder97",
+            ariaLabel: "GitHub",
+        },
+        { 
+            label: "LinkedIn", 
+            link: "https://www.linkedin.com/in/jorge-neder/",
+            ariaLabel: "LinkedIn"
+        },
     ];
 
     return (
@@ -119,6 +128,7 @@ const StaggeredMenuClient = (props: StaggeredMenuProps) => {
                 onMenuOpen={() => console.log("Menu opened")}
                 onMenuClose={() => console.log("Menu closed")}
                 isFixed={false}
+                forceClose={!showMenu}
             />
         </div>
     );
