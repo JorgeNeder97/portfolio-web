@@ -23,7 +23,7 @@ export default function PageWrapper({
             transition={{
                 duration: 2,
                 ease: [0.77, 0, 0.18, 1],
-                delay: 1.7,
+                delay: 1.5,
             }}
         >
             {children}
