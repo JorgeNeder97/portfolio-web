@@ -29,11 +29,11 @@ const Contact = () => {
                     
                     <ul className="flex flex-row place-items-center gap-1 lg:gap-5">
                         <li><hr className="w-screen border-2 text-gray-300" /></li>
-                        <li ><a href="mailto:jorge.neder97@gmail.com" target="_blank" className="socialIcons" rel="noopener noreferrer"><Gmail className="w-10 h-10" /></a></li>
-                        <li ><a href="https://linkedin.com/in/jorge-neder/" target="_blank" className="socialIcons" rel="noopener noreferrer"><Linkedin className="w-10 h-10" /></a></li>
-                        <li ><a href="https://github.com/JorgeNeder97" target="_blank" className="socialIcons" rel="noopener noreferrer"><Github className="w-10 h-10" /></a></li>
-                        <li ><a href="https://wa.me/5493854187064" target="_blank" className="socialIcons" rel="noopener noreferrer"><Whatsapp className="w-10 h-10" /></a></li>
-                        <li ><a href="https://www.instagram.com/jorge_neder97/" target="_blank" className="socialIcons" rel="noopener noreferrer"><Instagram className="w-10 h-10" /></a></li>
+                        <li ><a href="mailto:jorge.neder97@gmail.com" target="_blank" className="socialIcons" rel="noopener noreferrer" aria-label="Gmail"><Gmail className="w-10 h-10" /></a></li>
+                        <li ><a href="https://linkedin.com/in/jorge-neder/" target="_blank" className="socialIcons" rel="noopener noreferrer" aria-label="Linkedin"><Linkedin className="w-10 h-10" /></a></li>
+                        <li ><a href="https://github.com/JorgeNeder97" target="_blank" className="socialIcons" rel="noopener noreferrer" aria-label="Github"><Github className="w-10 h-10" /></a></li>
+                        <li ><a href="https://wa.me/5493854187064" target="_blank" className="socialIcons" rel="noopener noreferrer" aria-label="Whatsapp"><Whatsapp className="w-10 h-10" /></a></li>
+                        <li ><a href="https://www.instagram.com/jorge_neder97/" target="_blank" className="socialIcons" rel="noopener noreferrer" aria-label="Instagram"><Instagram className="w-10 h-10" /></a></li>
                         <li><hr className="w-screen border-2 text-gray-300" /></li>
                     </ul>
                     <span className="text-md w-3/5 max-w-[calc(100vw-30px)] text-center mt-5 text-white tracking-wide">{t("Conclusion")}</span>
