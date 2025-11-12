@@ -8,7 +8,7 @@ export const metadata: Metadata = {
         default: "Jorge Neder • FullStack Developer",
         template: "%s | Jorge Neder",
     },
-    description: "Portfolio web - Jorge Lian Neder Allub, FullStack Developer.",
+    
     keywords: [
         "Jorge Neder",
         "Jorge Lian Neder Allub",
@@ -66,6 +66,8 @@ export const metadata: Metadata = {
             en: "https://jorge-neder.vercel.app/en",
         },
     },
+
+    description: "Portfolio web - Jorge Lian Neder Allub, FullStack Developer.",
 };
 
 type Props = {

@@ -27,37 +27,42 @@ const StaggeredMenuClient = (props: StaggeredMenuProps) => {
     }, []);
 
     useEffect(() => {
-        if (!isDesktop) {
-            setShowMenu(true);
-            return;
-        }
+        const timer = setTimeout(() => {
 
-        let observer: IntersectionObserver | null = null;
-        let cancelled = false;
-
-        const waitForHero = async () => {
-            // Reintenta hasta 1 segundo máximo (10 veces cada 100ms)
-            for (let i = 0; i < 10; i++) {
-                const hero = document.querySelector("#hero");
-                if (hero) {
-                    observer = new IntersectionObserver(
-                        ([entry]) => setShowMenu(!entry.isIntersecting),
-                        { threshold: 0.1 }
-                    );
-                    observer.observe(hero);
-                    return;
-                }
-                await new Promise((r) => setTimeout(r, 100));
-                if (cancelled) return;
+            if (!isDesktop) {
+                setShowMenu(true);
+                return;
             }
-        };
+            
+            let observer: IntersectionObserver | null = null;
+            let cancelled = false;
+            
+            const waitForHero = async () => {
+                // Reintenta hasta 1 segundo máximo (10 veces cada 100ms)
+                for (let i = 0; i < 10; i++) {
+                    const hero = document.querySelector("#hero");
+                    if (hero) {
+                        observer = new IntersectionObserver(
+                            ([entry]) => setShowMenu(!entry.isIntersecting),
+                            { threshold: 0.1 }
+                        );
+                        observer.observe(hero);
+                        return;
+                    }
+                    await new Promise((r) => setTimeout(r, 100));
+                    if (cancelled) return;
+                }
+            };
+            
+            waitForHero();
+            
+            return () => {
+                cancelled = true;
+                observer?.disconnect();
+            };
+        }, 3500);
 
-        waitForHero();
-
-        return () => {
-            cancelled = true;
-            observer?.disconnect();
-        };
+        return () => clearTimeout(timer);
     }, [isDesktop, pathname]);
 
     const isHomePage = pathname === `/${locale}`;
