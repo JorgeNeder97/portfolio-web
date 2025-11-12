@@ -68,6 +68,10 @@ export const metadata: Metadata = {
     },
 
     description: "Portfolio web - Jorge Lian Neder Allub, FullStack Developer.",
+
+    other: {
+        "google-site-verification": "EsFIdarTbsxgyJEq3IKlkTbZf770IuQfymAMNP-jNGk",
+    },
 };
 
 type Props = {
