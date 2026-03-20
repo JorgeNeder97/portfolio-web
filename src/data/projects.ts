@@ -4,10 +4,10 @@ Python, DjangoREST, Redis, Docker } from "@/assets/techLogos";
 
 export const projectsPreview = [
     {
-        id: "Puntomind",
-        image: "/proyectosPreview/puntomind.webp",
-        stack: [Next, ReactLogo, Redux, TypeScript, TailwindCSS, Python, PostgresSQL, DjangoREST, Redis, Docker ],
-        link: "https://puntomind.com",
+        id: "GrupoInvexus",
+        image:"/proyectosPreview/grupoinvexus.webp",
+        stack: [Next, ReactLogo, TypeScript, TailwindCSS],
+        link: "https://www.grupoinvexus.com"
     },
     {
         id: "Numa",
@@ -20,5 +20,11 @@ export const projectsPreview = [
         image: "/proyectosPreview/justcoffee.webp",
         stack: [Next, ReactLogo, TypeScript, TailwindCSS],
         link: "https://just-coffee-sage.vercel.app",
+    },
+    {
+        id: "Puntomind",
+        image: "/proyectosPreview/puntomind.webp",
+        stack: [Next, ReactLogo, Redux, TypeScript, TailwindCSS, Python, PostgresSQL, DjangoREST, Redis, Docker ],
+        link: "https://puntomind.com",
     },
 ];

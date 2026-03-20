@@ -65,6 +65,19 @@
                 "Caracteristicas": {
                     "Titulo": "Características destacadas"
                 }
+            },
+            "GrupoInvexus": {
+                "Titulo": "Grupo Invexus",
+                "Tipo": "Cliente",
+                "Descripcion": "Landing Page del Grupo Invexus",
+                "Contenido": {
+                    "ContenidoUno": "",
+                    "ContenidoDos": "",
+                    "ContenidoTres": ""
+                },
+                "Caracteristicas": {
+                    "Titulo": "Características destacadas"
+                }
             }
         },
         "StackTitulo": "Stack utilizado"
